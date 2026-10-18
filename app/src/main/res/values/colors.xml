@@ -1,0 +1,23 @@
+<resources>
+    <!-- PREMIUM THEME COLORS (New values for old names to keep the app consistent) -->
+    <color name="malaika_purple">#5D4037</color> <!-- Now Dark Brown -->
+    <color name="malaika_purple_dark">#3E2723</color> <!-- Now Very Dark Brown -->
+    <color name="malaika_pink">#C49A7A</color> <!-- Now Taupe -->
+    <color name="malaika_pink_light">#F5EFEB</color> <!-- Now Soft Beige -->
+    <color name="malaika_cream">#FDF8F5</color> <!-- Now Light Beige Background -->
+
+    <!-- NEW COLOR NAMES (Used in your new XML) -->
+    <color name="malaika_beige_bg">#FDF8F5</color>
+    <color name="malaika_taupe">#C49A7A</color>
+    <color name="malaika_brown">#5D4037</color>
+    <color name="malaika_text_grey">#757575</color>
+    <color name="input_bg">#F5EFEB</color>
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Standard Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_text">#757575</color>
+    <color name="available_green">#4CAF50</color>
+    <color name="sold_out_red">#D32F2F</color>
+</resources>

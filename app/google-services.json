@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "137061469577",
+    "project_id": "malaika-app-8d05d",
+    "storage_bucket": "malaika-app-8d05d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137061469577:android:9392069a6209b44fb52558",
+        "android_client_info": {
+          "package_name": "com.example.ogacorp.malaika"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137061469577-tvs8gcvogmiigk0ru3trrhdp8i89qu26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ogacorp.malaika",
+            "certificate_hash": "97649f138ece5df4ba1fdefa21b3de478f974d29"
+          }
+        },
+        {
+          "client_id": "137061469577-u019fuqk2dst17751coh351hfn5kcl1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkuSbHvmEjWetPSlh_r3nqDZ__2Vy6VRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137061469577-u019fuqk2dst17751coh351hfn5kcl1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

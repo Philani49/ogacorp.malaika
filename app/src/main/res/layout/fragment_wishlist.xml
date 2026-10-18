@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/malaika_beige_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="My Wishlist"
+        android:textColor="@color/malaika_brown"
+        android:textSize="28sp"
+        android:fontFamily="serif"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWishlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="16dp"
+        android:clipToPadding="false" />
+
+    <TextView
+        android:id="@+id/tvWishlistEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Your wishlist is empty.\nTap the heart on any product to save it."
+        android:textAlignment="center"
+        android:textColor="@color/malaika_text_grey"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp"
+        android:visibility="gone" />
+</LinearLayout>

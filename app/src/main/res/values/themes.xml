@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Malaika" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/malaika_purple</item>
+        <item name="colorPrimaryVariant">@color/malaika_purple_dark</item>
+        <item name="colorSecondary">@color/malaika_pink</item>
+        <item name="android:statusBarColor">@color/malaika_purple_dark</item>
+        <item name="android:windowBackground">@color/malaika_cream</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Material3.Corner.Full" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
