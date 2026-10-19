@@ -54,8 +54,10 @@ dependencies {
     // Glide (For loading images from URLs in the future)
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
-    // Testing Dependencies
+    /// Testing Dependencies
     testImplementation(libs.junit)
+
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation("androidx.test:core:1.7.0")
 }
