@@ -2,63 +2,81 @@ name: Android CI
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main", "master", "develop" ]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "main", "master", "develop" ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  build-and-unit-test:
-    name: Build and unit tests
+  unit-and-build:
+    name: Unit tests and debug build
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out source
         uses: actions/checkout@v4
-      - name: Set up JDK 17
+
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-      - name: Install Android SDK platform and build tools
-        run: sdkmanager "platforms;android-37" "build-tools;37.0.0"
+          java-version: "17"
+
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
-      - name: Make Gradle wrapper executable
-        run: chmod +x ./gradlew
-      - name: Run local unit tests
+
+      - name: Run unit tests
         run: ./gradlew testDebugUnitTest
-      - name: Assemble debug APK
+
+      - name: Build debug APK
         run: ./gradlew assembleDebug
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unit-test-reports
+          path: app/build/reports/tests/
+          if-no-files-found: ignore
+
       - name: Upload debug APK
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: malaika-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
 
-  authentication-ui-tests:
-    name: Authentication UI tests (emulator)
+  ui-tests:
+    name: Espresso UI tests on emulator
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out source
         uses: actions/checkout@v4
-      - name: Set up JDK 17
+
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+          java-version: "17"
+
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
-      - name: Make Gradle wrapper executable
-        run: chmod +x ./gradlew
-      - name: Run authentication UI tests on emulator
+
+      - name: Run UI tests on Android emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 35
+          target: google_apis
           arch: x86_64
           profile: pixel_2
           script: ./gradlew connectedDebugAndroidTest
+
+      - name: Upload UI test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-test-reports
+          path: app/build/reports/androidTests/
+          if-no-files-found: ignore
