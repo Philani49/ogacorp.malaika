@@ -27,21 +27,21 @@ here:
 https://www.youtube.com/shorts/fwSbJXzmZmY
 Screenshots
 
-Splash Screen
-### Splash Screen
-![Splash Screen](screenshots/splash screen.jpg)
 
-Login
+### Splash Screen
+![Splash Screen](screenshots/splashscreen.jpg)
+
+
 ### Login
 ![Login Screen](screenshots/loginscreen.jpg)
-Home
+
 ### Home
 ![Home Screen](screenshots/Homescreen.jpg)
 
-Boutique
+
 ### Boutique
 ![boutique](screenshots/clothes.jpg)
-Booking System
+
 ### Booking System
 ![Booking System](screenshots/Bookings.jpg)
 
