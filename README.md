@@ -40,9 +40,20 @@ Home
 
 Boutique
 ### Boutique
-![boutique](screenshots/clothes.jpg
+![boutique](screenshots/clothes.jpg)
 Booking System
-Admin Dashboard & Inventory
+### Booking System
+![Booking System](screenshots/Bookings.jpg)
+
+Admin Dashboard
+### Admin Dashboard
+![Admin Dashboard](screenshots/AdminDash.jpg)
+
+Inventory
+### Admin Inventory
+![Admin Inventory](screenshots/AdminInvent.jpg)
+
 
 Installation
-The signed APK is ready for deployment. To test the app, download the APK file and install it on an Android device (ensure "Install from Unknown Sources" is enabled).
+The signed APK is ready for deployment. To test the app, download the APK file and install it on an Android device
+(ensure "Install from Unknown Sources" is enabled).
