@@ -29,9 +29,18 @@ Screenshots
 
 Splash Screen
 ### Splash Screen
-!
+![Splash Screen](screenshots/splash screen.jpg)
+
 Login
-Home & Boutique
+### Login
+![Login Screen](screenshots/loginscreen.jpg)
+Home
+### Home
+![Home Screen](screenshots/Homescreen.jpg)
+
+Boutique
+### Boutique
+![boutique](screenshots/clothes.jpg
 Booking System
 Admin Dashboard & Inventory
 
